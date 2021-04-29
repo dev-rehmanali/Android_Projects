@@ -1,0 +1,184 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signupbackarrowButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange1"
+            android:drawableLeft="@drawable/ic_baseline_menu_24"
+            android:text="@string/newreservation"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/paymentCardTypeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cardtype"
+            android:textColor="@color/orange1"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <RadioButton
+                android:id="@+id/paymentCreditCardRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/creditcard"
+                android:textColor="@color/orange1" />
+
+            <RadioButton
+                android:id="@+id/paymentJazzCashRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="@string/jazzcash"
+                android:textColor="@color/orange1" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cardnumber"
+            android:textAllCaps="true"
+            android:textColor="@color/orange1"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/paymentCardNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/orange1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expiredate"
+                    android:textAllCaps="true"
+                    android:textColor="@color/orange1"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/paymentExpireDateEditText"
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange1"
+                    android:ems="10"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cvv"
+                    android:textColor="@color/orange1"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/paymentcvvEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange1"
+                    android:ems="10"
+                    android:inputType="number" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/cardholdername"
+            android:textAllCaps="true"
+            android:textColor="@color/orange2"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/paymentCardHolderNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/orange1" />
+
+        <CheckBox
+            android:id="@+id/paymentSaveCardCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/savecard"
+            android:textAllCaps="true"
+            android:textColor="@color/orange2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/totalprice"
+            android:textColor="@color/orange3"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/paymentPaySecureButton"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:backgroundTint="@color/orange3"
+            android:text="@string/paysecure" />
+
+
+    </LinearLayout>
+</LinearLayout>

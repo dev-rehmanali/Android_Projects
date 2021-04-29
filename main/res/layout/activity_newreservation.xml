@@ -1,0 +1,224 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signupbackarrowButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange1"
+            android:drawableLeft="@drawable/ic_baseline_menu_24"
+            android:text="@string/newreservation"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/paymentCardTypeTextView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/personname"
+            android:textColor="@color/orange1"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/newreservationNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:editable="false"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/jhonesmith"
+            android:textColor="@color/orange1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/paymentCardTypeTextView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/burialdate"
+            android:textColor="@color/orange1"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/newreservationDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_rectangle"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Select Date"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/orange1"
+            android:textColorHint="@color/orange3"
+            android:textSize="16sp" />
+
+
+
+        <TextView
+            android:id="@+id/paymentCardTypeTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/time"
+            android:textColor="@color/orange1"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/newreservationTimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_rectangle"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Select Time"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/orange1"
+            android:textColorHint="@color/orange3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/paymentCardTypeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/relation"
+            android:textColor="@color/orange1"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <Spinner
+            android:id="@+id/newreservationrelationSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"
+            android:entries="@array/relation_list"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:spinnerMode="dialog" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/newreservationCottonRsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cotton"
+                android:textColor="@color/orange1" />
+
+            <CheckBox
+                android:id="@+id/newreservationShroudRsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:filterTouchesWhenObscured="false"
+                android:text="@string/shroud"
+                android:textColor="@color/orange1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/newreservationReligionistRsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/religion"
+                android:textColor="@color/orange1" />
+
+            <CheckBox
+                android:id="@+id/newreservationFlowerRsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/flower"
+                android:textColor="@color/orange1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/newreservationLabourRsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/labour"
+                android:textColor="@color/orange1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/totalprice"
+            android:textColor="@color/orange1"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/newreservationPaySecureButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/orange3"
+            android:text="@string/paysecure" />
+
+
+    </LinearLayout>
+</LinearLayout>

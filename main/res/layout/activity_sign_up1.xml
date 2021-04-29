@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/orange1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signupbackarrowButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange1"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:text="@string/signup"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/signupUserNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/orange1"
+                android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="@string/Username"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:textColor="@color/orange3"
+                android:textColorHint="@color/orange3" />
+
+            <EditText
+                android:id="@+id/signupFullNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/orange1"
+                android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="@string/fullname"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:textColor="@color/orange3"
+                android:textColorHint="@color/orange3" />
+
+            <EditText
+                android:id="@+id/signupEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:autofillHints=""
+                android:backgroundTint="@color/orange1"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="20dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/orange3"
+                android:textColorHint="@color/orange3" />
+
+            <EditText
+                android:id="@+id/signupPhoneNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/orange1"
+                android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="@string/contactnum"
+                android:inputType="number|text|textPassword"
+                android:textAllCaps="true"
+                android:textColor="@color/orange3"
+                android:textColorHint="@color/orange3" />
+
+            <EditText
+                android:id="@+id/signupAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/orange1"
+                android:drawableLeft="@drawable/ic_baseline_add_location_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="@string/address"
+                android:inputType="textPostalAddress"
+                android:textColor="@color/orange3"
+                android:textColorHint="@color/orange3" />
+
+            <EditText
+                android:id="@+id/signupPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/orange1"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/orange3"
+                android:textColorHint="@color/orange3" />
+
+            <EditText
+                android:id="@+id/signupConfirmPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange1"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="@string/confirmpass"
+                android:inputType="textPassword"
+                android:textAllCaps="true"
+                android:textColor="@color/orange3"
+                android:textColorHint="@color/orange3" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/signupcheckboxCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt2"
+            android:textColor="@color/orange2" />
+
+        <Button
+            android:id="@+id/signupSignUpbutton"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/orange1"
+            android:gravity="center"
+            android:text="@string/signup"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signupalreadyaccountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:linksClickable="true"
+                android:text="@string/alreadyaccount"
+                android:textColor="@color/orange4"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/signupLoginTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:linksClickable="true"
+                android:paddingLeft="5dp"
+                android:text="@string/login"
+                android:textColor="@color/blue1" />
+
+            <TextView
+                android:id="@+id/signupDonateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:linksClickable="true"
+                android:text="@string/donate"
+                android:textColor="@color/blue1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
